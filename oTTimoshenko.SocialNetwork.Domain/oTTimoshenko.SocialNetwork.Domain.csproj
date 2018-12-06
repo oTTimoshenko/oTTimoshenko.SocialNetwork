@@ -44,12 +44,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GroupsManagement\" />
-    <Folder Include="LikesManagement\" />
-    <Folder Include="MessagesManagement\" />
-    <Folder Include="PhotoManagement\" />
-    <Folder Include="RequestsManagement\" />
-    <Folder Include="UsersManagement\" />
+    <Folder Include="GroupsEntities\" />
+    <Folder Include="LikesEntities\" />
+    <Folder Include="MessagesEntities\" />
+    <Folder Include="PhotoEntities\" />
+    <Folder Include="RequestsEntities\" />
+    <Folder Include="UsersEntities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
