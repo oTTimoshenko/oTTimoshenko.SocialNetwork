@@ -48,7 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseEntity\BaseEntity.cs" />
+    <Compile Include="BaseEntity\IBaseEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersEntities\User.cs" />
+    <Compile Include="UsersEntities\UserAccountState.cs" />
+    <Compile Include="UsersEntities\UserProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GroupsEntities\" />
@@ -56,7 +61,6 @@
     <Folder Include="MessagesEntities\" />
     <Folder Include="PhotoEntities\" />
     <Folder Include="RequestsEntities\" />
-    <Folder Include="UsersEntities\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace oTTimoshenko.SocialNetwork.DataAccess
+namespace oTTimoshenko.SocialNetwork.DataAccess.EntityFramework.Repositories.Interfaces
 {
-    public class Class1
+    public interface IUserProfileRepository
     {
+
     }
 }

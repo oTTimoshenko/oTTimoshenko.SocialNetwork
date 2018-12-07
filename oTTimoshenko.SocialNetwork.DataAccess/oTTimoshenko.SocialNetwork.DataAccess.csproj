@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,20 +49,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EntityFramework\Context\EFContext.cs" />
+    <Compile Include="EntityFramework\Extensions\DbModelBuilderExtensions.cs" />
+    <Compile Include="EntityFramework\Repositories\BaseRepository\BaseRepository.cs" />
+    <Compile Include="EntityFramework\Repositories\BaseRepository\IBaseRepository.cs" />
+    <Compile Include="EntityFramework\Repositories\Interfaces\IUserProfileRepository.cs" />
+    <Compile Include="EntityFramework\Repositories\Interfaces\IUserRepository.cs" />
+    <Compile Include="EntityFramework\Repositories\UsersManagement\UserProfileRepository.cs" />
+    <Compile Include="EntityFramework\Repositories\UsersManagement\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GroupsManagement\" />
-    <Folder Include="LikesManagement\" />
-    <Folder Include="MessagesManagement\" />
-    <Folder Include="PhotoManagement\" />
-    <Folder Include="RequestsManagement\" />
-    <Folder Include="UsersManagement\" />
+    <Folder Include="EntityFramework\Repositories\GroupsManagement\" />
+    <Folder Include="EntityFramework\Repositories\LikesManagement\" />
+    <Folder Include="EntityFramework\Repositories\MessagesManagement\" />
+    <Folder Include="EntityFramework\Repositories\PhotoManagement\" />
+    <Folder Include="EntityFramework\Repositories\RequestsManagement\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\oTTimoshenko.SocialNetwork.Domain\oTTimoshenko.SocialNetwork.Domain.csproj">
+      <Project>{D58DC026-B850-4088-9C35-C275D7826620}</Project>
+      <Name>oTTimoshenko.SocialNetwork.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
