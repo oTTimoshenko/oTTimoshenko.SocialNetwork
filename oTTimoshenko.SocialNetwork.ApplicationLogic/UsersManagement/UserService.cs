@@ -26,6 +26,7 @@ namespace oTTimoshenko.SocialNetwork.ApplicationLogic.UsersManagement
                     var user = userRepository.GetAll().FirstOrDefault(u => u.Login.Equals(dto.Login) && u.Password.Equals(dto.Password));
                     user.IsOnline = true;
 
+                    userRepository.Save();
                     return true;
                 }
                 else
