@@ -6,7 +6,7 @@ namespace oTTimoshenko.SocialNetwork.DataAccess.EntityFramework.Repositories
 {
     public abstract class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
-        public readonly DbContext Context;
+        protected DbContext Context;
 
         public virtual void Add(T entityObject)
             => Context.Set<T>().Add(entityObject);
@@ -26,6 +26,11 @@ namespace oTTimoshenko.SocialNetwork.DataAccess.EntityFramework.Repositories
 
             if (entity != null)
                 Context.Set<T>().Remove(entity);
+        }
+
+        public void Save()
+        {
+            Context.SaveChanges();
         }
     }
 }

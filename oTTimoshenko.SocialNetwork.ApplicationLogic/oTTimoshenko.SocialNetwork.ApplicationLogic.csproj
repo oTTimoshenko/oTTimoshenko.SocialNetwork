@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersManagement\DTO\LogInDTO.cs" />
+    <Compile Include="UsersManagement\DTO\RegistrateDTO.cs" />
+    <Compile Include="UsersManagement\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GroupsManagement\" />
@@ -50,7 +53,16 @@
     <Folder Include="MessagesManagement\" />
     <Folder Include="PhotoManagement\" />
     <Folder Include="RequestsManagement\" />
-    <Folder Include="UsersManagement\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\oTTimoshenko.SocialNetwork.DataAccess\oTTimoshenko.SocialNetwork.DataAccess.csproj">
+      <Project>{18961ECD-207B-4D0B-B0BB-D7D01A7748AD}</Project>
+      <Name>oTTimoshenko.SocialNetwork.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\oTTimoshenko.SocialNetwork.Domain\oTTimoshenko.SocialNetwork.Domain.csproj">
+      <Project>{D58DC026-B850-4088-9C35-C275D7826620}</Project>
+      <Name>oTTimoshenko.SocialNetwork.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

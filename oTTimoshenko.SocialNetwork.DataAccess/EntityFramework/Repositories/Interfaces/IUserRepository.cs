@@ -1,4 +1,5 @@
-﻿using System;
+﻿using oTTimoshenko.SocialNetwork.Domain.UsersEntities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace oTTimoshenko.SocialNetwork.DataAccess.EntityFramework.Repositories.Interfaces
 {
-    public interface IUserRepository
+    public interface IUserRepository: IBaseRepository<User>
     {
 
     }

@@ -14,5 +14,6 @@ namespace oTTimoshenko.SocialNetwork.DataAccess.EntityFramework.Repositories
         void Delete(int id);
         T GetById(int id);
         IEnumerable<T> GetAll();
+        void Save()
     }
 }
